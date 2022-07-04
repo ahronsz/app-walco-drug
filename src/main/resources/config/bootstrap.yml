@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: app-walco-drug
+  r2dbc:
+    url: 'r2dbc:postgresql://localhost:5432/walco'
+    username: 'postgres'
+    password: 'postgres'
+    pool:
+      initial-size: 1
+      max-size: 2
+      validation-query: SELECT 1
